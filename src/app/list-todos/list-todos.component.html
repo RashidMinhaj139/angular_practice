@@ -1,0 +1,70 @@
+<!-- <div>
+
+
+    <table border="2">
+        <caption>My Todos</caption>
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>Desciption</td>
+            </tr>
+        </thead>
+        <tbody> -->
+<!-- loop used to render list data  -->
+<!-- <tr *ngFor="let todo of todos">
+                <td>{{todo.id}} </td>
+                <td>{{todo.desc}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div> -->
+<!-- table 2 -->
+<!-- <div>
+
+
+    <table border="3">
+        <thead>
+            <tr>
+                <td> id</td>
+                <td> Desciption</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let datas of data">
+                <td> {{datas.id}} </td>
+                <td> {{datas.desc}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+<h1>My Todos</h1>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>
+                    Desciption
+                </td>
+                <td>
+                    Date
+                </td>
+
+                <td>
+                    is completed
+                </td>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!-- will be same for constructor a  same as for array -->
+            <tr *ngFor="let todo of todos">
+                <td> {{todo.desc}} </td>
+                <td> {{todo.targetdate}} </td>
+                <td> {{todo.done}} </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

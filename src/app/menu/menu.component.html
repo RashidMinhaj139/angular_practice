@@ -1,0 +1,27 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <a routerLink="https://www.todos.com" class="navbar-brand ">Megamart</a>
+        </div>
+
+        <ul class="navbar-nav">
+            <li>
+                <a *ngIf="hardcodedAuthticationService.isUserLOggedIn()"  routerLink="/welcome3/rashid" class="nav-link">Home</a>
+
+            </li>
+            <li>
+                <a *ngIf="hardcodedAuthticationService.isUserLOggedIn()" routerLink="/listtodos" class="nav-link">Todos</a>
+
+            </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li>
+                <a  *ngIf="!hardcodedAuthticationService.isUserLOggedIn()" routerLink="/login" class="nav-link">login</a>
+            </li>
+            <li>
+                <a  *ngIf="hardcodedAuthticationService.isUserLOggedIn()" routerLink="/logout" class="nav-link">logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>
